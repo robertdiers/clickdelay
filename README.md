@@ -1,0 +1,2 @@
+# clickdelay
+Click -> Delay -> Click
