@@ -1,0 +1,27 @@
+version: '3'
+services:
+    vsc-server:
+        build: vsc
+        container_name: code-server-kotlin
+        hostname: code-server-kotlin
+        networks:
+            kotlin-click-net:
+        volumes:
+            - $HOME/.config:/home/coder/.config
+            - $PWD:/home/coder/project
+            - $HOME/.m2/repository:/home/coder/.m2/repository
+        environment:
+            - DOCKER_USER=$USER
+        user: "${EXAMPLE_UID}:${EXAMPLE_GID}"
+        expose:
+            - 8080
+            #add port of your application
+            - 50000
+        ports:
+            - 8080:8080
+            #add port of your application
+            - 50000:50000
+
+networks:
+    kotlin-click-net:
+
