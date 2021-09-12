@@ -13,3 +13,7 @@ RUN code-server --install-extension fwcd.kotlin
 RUN code-server --install-extension mathiasfrohlich.Kotlin
 RUN code-server --install-extension vscjava.vscode-java-pack
 RUN code-server --install-extension GabrielBB.vscode-lombok
+
+#git
+RUN git config --global user.email "robertdiers@gmail.com"
+RUN git config --global user.name "Robert Diers"
