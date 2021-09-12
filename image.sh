@@ -1,1 +1,1 @@
-mvn compile jib:dockerBuild
+mvn jib:dockerBuild
