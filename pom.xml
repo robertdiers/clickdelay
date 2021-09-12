@@ -74,9 +74,17 @@
 				<artifactId>jib-maven-plugin</artifactId>
 				<configuration>
 					<to>
-						<image>clickdelay:1.0</image>
+						<image>robertdiers/clickdelay:1.0</image>
 					</to>
-				</configuration>				
+				</configuration>	
+				<executions>
+					<execution>
+					<phase>package</phase>
+					<goals>
+						<goal>build</goal>
+					</goals>
+					</execution>
+				</executions>			
 			</plugin>
 		</plugins>
 	</build>

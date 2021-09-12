@@ -7,6 +7,7 @@ RUN apt update
 RUN apt install -y maven
 RUN apt install -y openjdk-11-jdk
 RUN apt install -y wget
+RUN apt install -y docker.io
 
 #install code extensions
 RUN code-server --install-extension fwcd.kotlin

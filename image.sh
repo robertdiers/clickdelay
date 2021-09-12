@@ -1,1 +1,1 @@
-mvn jib:dockerBuild
+./mvnw package
