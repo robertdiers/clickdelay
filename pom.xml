@@ -73,6 +73,10 @@
 				<groupId>com.google.cloud.tools</groupId>
 				<artifactId>jib-maven-plugin</artifactId>
 				<configuration>
+					<from>
+						<!-- <image>openjdk:11-slim</image> -->
+						<image>arm32v7/openjdk:11-slim</image>
+					</from>
 					<to>
 						<image>robertdiers/clickdelay:1.0</image>
 					</to>
